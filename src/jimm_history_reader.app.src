@@ -1,0 +1,12 @@
+{application, jimm_history_reader, [
+
+    {description, ""},
+    {vsn, "0.1"},
+    {registered, []},
+    {env, []},
+
+    {applications, [
+        kernel,
+        stdlib
+    ]}
+]}.

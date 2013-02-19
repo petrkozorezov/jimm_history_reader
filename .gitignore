@@ -1,5 +1,14 @@
-.eunit
+log
+logs
+ebin
 deps
-*.o
+*~
 *.beam
-*.plt
+erl_crash.dump
+.eunit
+.idea
+doc_tmp
+plts
+eunit.coverage.xml
+.DS_Store
+*.coverdata
