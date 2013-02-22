@@ -6,7 +6,11 @@
 %%%
 -module(jimm_history_reader).
 
--export([main/1]).
+-export([
+    main/1,
+    convert_file/4,
+    read_file/2
+]).
 
 -record(message, {
     direction,
