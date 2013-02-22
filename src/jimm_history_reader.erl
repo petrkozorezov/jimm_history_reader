@@ -116,7 +116,9 @@ read_msg(<<
         <<Msg:MsgSize/binary, _:FillingSize/binary, Data2/binary>> ->
             {parse_msg(Msg), Data2};
         <<Msg:MsgSize/binary>> ->
-            {parse_msg(Msg), <<>>}
+            {parse_msg(Msg), <<>>};
+        _ ->
+            throw(currupted_file)
     end;
 read_msg(_) ->
     throw(currupted_file).
